@@ -13,7 +13,7 @@
     </p>
   </div>
   <div class="col-md-4">
-    <%= image_tag "#{@user.avatar}", class: "avatar_image", alt: "avatar image"%>
+    <%= image_tag @user.avatar.url if @user.avatar? %>
   </div>
 </div>
 
